@@ -1,0 +1,26 @@
+* {
+    background-color: silver;
+}
+
+.header {
+    background-color: khaki;
+    width: 1860px;
+    height: 140px;
+   border: 5px black;
+   
+}
+
+.bar {
+    position: relative;
+    width: 500px;
+    height: 40px;
+    background-color:silver;
+    margin-top: 45px;
+    margin-left: 620px;
+}
+
+.btn {
+    background-color: white;
+    height: 40px;
+    width: 100px;
+}
