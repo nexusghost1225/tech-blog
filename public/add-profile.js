@@ -2,14 +2,14 @@ async function newFormHandler(event) {
     event.preventDefault();
     const account_name = document.querySelector('#account_name').value;
     const description = document.querySelector('#description').value;
-    const guest_name = document.querySelector('#guest_name').value;
+    const password = document.querySelector('#password').value;
     // Send fetch request to add a new profile
     const response = await fetch(`/api/profile`, {
       method: 'POST',
       body: JSON.stringify({
         account_name: account_name,
         description,
-        guest_name,
+        password: password,
       }),
       headers: {
         'Content-Type': 'application/json',
