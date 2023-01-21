@@ -3,8 +3,6 @@ async function newFormHandler(event) {
     const account_name = document.querySelector('#account_name').value;
     const description = document.querySelector('#description').value;
     const guest_name = document.querySelector('#guest_name').value;
-    // The following is a ternary operator. It checks to see if has_nuts is checked. If it is, it will return true, otherwise, it will return false.
-    const has_nuts = document.querySelector('#has_nuts:checked') ? true : false;
     // Send fetch request to add a new profile
     const response = await fetch(`/api/profile`, {
       method: 'POST',
@@ -12,7 +10,6 @@ async function newFormHandler(event) {
         account_name: account_name,
         description,
         guest_name,
-        has_nuts,
       }),
       headers: {
         'Content-Type': 'application/json',
